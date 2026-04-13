@@ -1,7 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  outputFileTracingRoot: __dirname, // force Next.js to use this folder as root
 };
 
-export default nextConfig;
+module.exports = nextConfig;
